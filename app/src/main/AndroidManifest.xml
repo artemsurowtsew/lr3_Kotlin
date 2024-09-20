@@ -12,19 +12,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.New_activity"
         tools:targetApi="31">
+
         <activity
             android:name=".Test_Activity"
             android:exported="false" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.New_activity">
+            android:theme="@style/Theme.NewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false"
+            android:label="@string/title_help"
+            android:theme="@style/Theme.NewActivity.NoActionBar" />
+
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="@string/title_user_details"
+            android:theme="@style/Theme.NewActivity.NoActionBar" />
+
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_second_activity"
+            android:theme="@style/Theme.NewActivity.NoActionBar" />
+
     </application>
 
 </manifest>
